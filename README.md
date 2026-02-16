@@ -10,11 +10,11 @@ ________________________________________
 ### Unlike traditional statistical approaches, this system leverages:
 
 
-  1.	MiniLM transformer embeddings for deep semantic representation
+- MiniLM transformer embeddings for deep semantic representation
 
-  2.	Random Forest Classifier (RFC) for robust high-dimensional classification
+- Random Forest Classifier (RFC) for robust high-dimensional classification
 
-  3.	A Flask-based web interface for real-time language prediction
+- A Flask-based web interface for real-time language prediction
 
 ________________________________________
 
@@ -55,13 +55,13 @@ ________________________________________
 
 ## Architecture Highlights
 
-  1.	NLP preprocessing (tokenization, stopword removal, lemmatization)
+- NLP preprocessing (tokenization, stopword removal, lemmatization)
 
-  2.	MiniLM transformer for compact semantic embeddings
+- MiniLM transformer for compact semantic embeddings
 
-  3.  Ensemble-based Random Forest classifier
+- Ensemble-based Random Forest classifier
 
-  4.	Real-time prediction via Flask web deployment
+- Real-time prediction via Flask web deployment
 
 ________________________________________
 
@@ -86,35 +86,35 @@ ________________________________________
 ### Backend:
 
 
-  1.	Python 3.12
+- Python 3.12
 
-  2.	Flask 3.1.2
+- Flask 3.1.2
 
-  3.	Transformers 4.47.0
+- Transformers 4.47.0
 
-  4.	Torch 2.8.0
+- Torch 2.8.0
 
-  5.	Scikit-learn 1.6.1
+- Scikit-learn 1.6.1
 
-  6.	NLTK
+- NLTK
 
 
 ### Frontend:
 
 
-  1.	HTML5
+- HTML5
 
-  2.	CSS3
+- CSS3
 
-  3. JavaScript
+- JavaScript
 
 
 ### ML Libraries:
 
 
-  1.	Random Forest (Scikit-learn)
+-	Random Forest (Scikit-learn)
 
-  2.	MiniLM (HuggingFace Transformers)
+-	MiniLM (HuggingFace Transformers)
 
 
 ## 💻 Hardware & Software Requirements
@@ -123,19 +123,19 @@ ________________________________________
 ### Software:
 
 
-  1.	Python 3.12.0
+  -	Python 3.12.0
 
-  2.	Windows OS (Tested)
+  -	Windows OS (Tested)
 
 
 ### Hardware:
 
 
-  1.	Intel i5 Processor
+  -	Intel i5 Processor
 
-  2.	8 GB RAM
+  -	8 GB RAM
 
-  3.	512 GB Storage
+  -	512 GB Storage
 
 
 ## 🚀 Installation Guide
@@ -151,22 +151,25 @@ ________________________________________
      python -m venv venv
 
 
-Activate:
+- Activate:
 
 
-Windows
+- Windows
 
-    venv\Scripts\activate
-
-
-Mac/Linux
-
-    source venv/bin/activate
+      venv\Scripts\activate
 
 
-  3. Install Requirements
+- Mac/Linux
+
+      source venv/bin/activate
+
+
+
+3.Install Requirements
 
     pip install -r requirements.txt
+
+
 
 (Ensure Python 3.12 is installed)
 
@@ -188,16 +191,21 @@ ________________________________________
 
 ## 🔬 Model Pipeline (Technical Flow)
 
+1. **User Input Acquisition**  
+   Raw text is received through the web interface.
 
-  1.	User inputs text
+2. **Text Preprocessing (NLTK)**  
+   The input text undergoes normalization, tokenization, stop-word removal, and lemmatization to prepare it for embedding generation.
 
-  2.	Preprocessing using NLTK
+3. **Feature Extraction – MiniLM Embeddings**  
+   The preprocessed text is passed through the MiniLM transformer model to generate dense, low-dimensional semantic embeddings.
 
-  3.	MiniLM generates sentence embeddings
+4. **Classification – Random Forest**  
+   The generated embedding vectors are fed into a trained Random Forest classifier for language prediction.
 
-  4.	Embeddings passed to Random Forest classifier
+5. **Prediction Output**  
+   The predicted language label is returned to the Flask application and displayed in the user interface.
 
-  5.	Language predicted and returned to UI
 
 ________________________________________
 
@@ -243,7 +251,7 @@ ________________________________________
 
   1.	Replace RFC with fine-tuned transformer classifier
 
-  2. Add REST API endpoint
+  2.  Add REST API endpoint
   
   3.	Docker containerization
 
