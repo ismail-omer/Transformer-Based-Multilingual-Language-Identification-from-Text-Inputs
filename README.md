@@ -2,7 +2,7 @@
   Transformer-Based Text Language Classification (MiniLM + Random Forest)
 <p align="center"> <img src="https://img.shields.io/badge/Python-3.12-blue?style=for-the-badge&logo=python" /> <img src="https://img.shields.io/badge/Flask-Web%20App-white?style=for-the-badge&logo=flask" /> <img src="https://img.shields.io/badge/Transformers-MiniLM-blue?style=for-the-badge&logo=huggingface" /> <img src="https://img.shields.io/badge/Model-Random%20Forest-white?style=for-the-badge" /> </p>
 
-________________________________________
+
 ## 🎯 Project Overview:
   This project implements a Transformer-Based Multilingual Language Identification System capable of accurately classifying short and informal       text inputs across multiple languages.
 
@@ -16,7 +16,7 @@ ________________________________________
 
 - A Flask-based web interface for real-time language prediction
 
-________________________________________
+
 
 ## The solution is optimized for:
 
@@ -28,7 +28,7 @@ ________________________________________
   3.	Code-mixed content
 
   4.	Social media text
-________________________________________
+
 
 ## Table of Contents
 
@@ -44,7 +44,7 @@ ________________________________________
 - [Future Improvements](#future-improvements)
 - [Conclusion](#conclusion)
 
-________________________________________
+
 
 
 ## 🧠 Project Architecture:
@@ -63,14 +63,14 @@ ________________________________________
 
 - Real-time prediction via Flask web deployment
 
-________________________________________
+
 
 ## 🧩 System Modules
 
 <img width="1173" height="1280" alt="image" src="https://github.com/user-attachments/assets/d64d2ac6-7694-4e5f-b18a-e17b6d51529d" />
 
 
-________________________________________
+
 
 
 ## 🎨 Prototype – Web Interface
@@ -144,7 +144,7 @@ ________________________________________
 
      git clone https://github.com/ismail-omer/ismail-omer/Transformer-Based-Multilingual-Language-Identification-from-Text-Inputs.git
 
-     cd your-repo-name
+     cd Transformer-Based-Multilingual-Language-Identification-from-Text-Inputs
 
   2.  Create Virtual Environment
 
@@ -156,7 +156,7 @@ ________________________________________
 
 - Windows
 
-      venv\Scripts\activate
+      .\venv\Scripts\activate
 
 
 - Mac/Linux
@@ -173,7 +173,6 @@ ________________________________________
 
 (Ensure Python 3.12 is installed)
 
-________________________________________
 
 
 ▶ Running the Application
@@ -186,7 +185,6 @@ Open browser:
     http://127.0.0.1:5000
 
 
-________________________________________
 
 
 ## 🔬 Model Pipeline (Technical Flow)
@@ -207,7 +205,7 @@ ________________________________________
    The predicted language label is returned to the Flask application and displayed in the user interface.
 
 
-________________________________________
+
 
 ## 📊 Baseline vs Proposed Model
 
@@ -223,13 +221,13 @@ ________________________________________
 ## RFC improves:
 
 
-  1.	Bias reduction
+  -	Bias reduction
 
-  2.	Variance control
+  -	Variance control
 
-  3.	Generalization performance
+  -	Generalization performance
 
-________________________________________
+
 
 
 ## 🌍 Applications
@@ -243,23 +241,23 @@ ________________________________________
 
   4.	Cross-border communication tools
 
-________________________________________
+
 
 
 ## 🔮 Future Improvements
 
 
-  1.	Replace RFC with fine-tuned transformer classifier
+  -	Replace RFC with fine-tuned transformer classifier
 
-  2.  Add REST API endpoint
+  -  Add REST API endpoint
   
-  3.	Docker containerization
+  -	Docker containerization
 
-  4.	Cloud deployment (AWS / GCP)
+  -	Cloud deployment (AWS / GCP)
 
-  5.	Support for additional low-resource languages
+  -	Support for additional low-resource languages
 
-________________________________________
+
 
 
 ## 📌 Conclusion
