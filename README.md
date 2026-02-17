@@ -67,7 +67,45 @@
 
 ## 🧩 System Modules
 
-<img width="1173" height="1280" alt="image" src="https://github.com/user-attachments/assets/d64d2ac6-7694-4e5f-b18a-e17b6d51529d" />
+    🧩 System Modules
+    │
+    ├── 📂 Dataset
+    │   └── Curated multilingual text samples
+    │       ├── Multiple languages
+    │       ├── Short text inputs
+    │       └── Code-mixed data
+    │
+    ├── 🧹 NLP Preprocessing
+    │   ├── Tokenization
+    │   ├── Stop-word Removal
+    │   └── Lemmatization
+    │
+    ├── 📊 Exploratory Data Analysis (EDA)
+    │   ├── Language distribution analysis
+    │   ├── Word frequency patterns
+    │   └── Character usage statistics
+    │
+    ├── 🤖 Feature Extraction (MiniLM)
+    │   ├── Transformer-based embeddings
+    │   ├── Context-aware semantic vectors
+    │   └── Compact high-dimensional representation
+    │
+    ├── 📉 Baseline Models
+    │   ├── Decision Tree Classifier (DTC)
+    │   ├── K-Nearest Neighbors (KNN)
+    │   └── Naïve Bayes Classifier (NBC)
+    │
+    ├── 🌲 Proposed Model
+    │   └── Random Forest Classifier (RFC)
+    │       ├── Ensemble learning
+    │       ├── Robust to high-dimensional data
+    │       └── Improved generalization performance
+    │
+    └── 🌐 Flask Web Application
+        ├── User text input interface
+        ├── Real-time prediction output
+        └── Blue & white responsive UI
+    
 
 
 
@@ -207,7 +245,84 @@ Official PyTorch selector (bookmark this):
 
     pip install tensorflow==2.17.0
 
-### 5. Install everything (single command)
+### 5. Create requirements.txt (clean & controlled)
+
+    notepad requirements.txt
+
+Paste exactly this (already ordered to reduce conflicts):
+
+    audioread==3.0.1
+    beautifulsoup4==4.13.4
+    bleach==6.2.0
+    catboost==1.2.8
+    cryptography==46.0.2
+    Django==5.2.7
+    django-cors-headers==4.9.0
+    djangorestframework==3.16.1
+    email-validator==2.3.0
+    emoji==2.15.0
+    Flask==3.1.2
+    flask-cors==6.0.1
+    Flask-Login==0.6.3
+    Flask-SQLAlchemy==3.1.1
+    Flask-WTF==1.2.2
+    google-ai-generativelanguage==0.6.15
+    google-api-core==2.29.0
+    google-api-python-client==2.188.0
+    google-auth==2.48.0
+    google-auth-httplib2==0.3.0
+    google-generativeai==0.8.6
+    google-pasta==0.2.0
+    googleapis-common-protos==1.72.0
+    graphviz==0.21
+    h5py==3.14.0
+    imbalanced-learn==0.14.0
+    imodels==2.0.0
+    Jinja2==3.1.6
+    joblib==1.4.2
+    jupyter==1.1.1
+    jupyterlab==4.4.5
+    keras==3.11.3
+    langcodes==3.5.0
+    langdetect==1.0.9
+    language_data==1.3.0
+    librosa==0.11.0
+    lightgbm==4.6.0
+    lmdb==1.7.5
+    matplotlib==3.10.3
+    networkx==3.5
+    ngboost==0.5.6
+    nltk==3.9.1
+    numba==0.61.2
+    numpy==1.26.4
+    pandas==2.3.1
+    pillow==11.3.0
+    plotly==6.3.0
+    protobuf==5.29.5
+    pycryptodome==3.23.0
+    pymongo==4.16.0
+    PyMySQL==1.1.2
+    redis==6.4.0
+    requests==2.32.4
+    resampy==0.4.3
+    safetensors==0.6.2
+    scikit-image==0.26.0
+    scikit-learn==1.6.1
+    scipy==1.13.1
+    seaborn==0.13.2
+    soundfile==0.13.1
+    SQLAlchemy==2.0.46
+    tinydb==4.8.2
+    tokenizers==0.21.4
+    tqdm==4.67.1
+    transformers==4.47.0
+    ultralytics==8.3.184
+    urllib3==2.5.0
+    xgboost==3.0.4
+    zipp==3.23.0
+
+Ctrl + s & Close the notepad
+### 7. Install everything (single command)
 
      pip install -r requirements.txt
 
