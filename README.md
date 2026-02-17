@@ -139,14 +139,14 @@
 
 
 ## 🚀 Installation Guide
-
-  1.  Clone the Repository
+(Ensure Python 3.12 is installed)
+##  1.  Clone the Repository
 
      git clone https://github.com/ismail-omer/Transformer-Based-Multilingual-Language-Identification-from-Text-Inputs.git
 
      cd Transformer-Based-Multilingual-Language-Identification-from-Text-Inputs
 
-  2.  Create Virtual Environment
+ ## 2.  Create Virtual Environment
 
      python -m venv venv
 
@@ -165,19 +165,68 @@
 
 
 
-3.Install Requirements
+## 3.Install Requirements
+### 1. Upgrade core tooling (critical)
+
+       python -m pip install --upgrade pip setuptools wheel
+- This avoids 80% of installation failures.
     
-    python.exe -m pip install --upgrade pip
-    
-    pip install -r requirements.txt
+### 2. Install system-level dependency (Graphviz)
+- graphviz will not work without this.
+- Download (official):
+
+      https://graphviz.org/download/
+
+- Choose:
+
+      Windows 64-bit Installer (.exe)
+
+- During install:
+
+- ✔ Check “Add Graphviz to PATH”
+
+- After installation, restart PowerShell and re-activate venv.
+- Verify:
+
+      dot -V
+- You should see a Graphviz version.
+
+### 3. Install PyTorch FIRST (very important)
+
+Do NOT rely on pip default for torch.
+
+Official PyTorch selector (bookmark this):
+
+    https://pytorch.org/get-started/locally/
+
+### For most laptops (CPU-only, safe choice):
+
+    pip install torch==2.8.0 torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cpu
+
+### 4. Install TensorFlow (standalone step)
+
+    pip install tensorflow==2.17.0
+
+### 5. Install everything (single command)
+
+     pip install -r requirements.txt
+
+### 6. verification
+Copy-paste exactly this:
+
+    python -c "import transformers, torch, tensorflow, sklearn, pandas; print('Transformers:',       transformers.__version__); print('Torch:', torch.__version__); print('TensorFlow:', tensorflow.__version__); print('Scikit-learn:', sklearn.__version__); print('Pandas:', pandas.__version__)"
+
+Expected output (versions may vary slightly):
+
+    Transformers: 4.47.0
+    Torch: 2.8.0
+    TensorFlow: 2.17.0
+    Scikit-learn: 1.6.1
+    Pandas: 2.3.1
 
 
 
-(Ensure Python 3.12 is installed)
-
-
-
-▶ Running the Application
+## ▶ Running the Application
 
     python app.py
 
