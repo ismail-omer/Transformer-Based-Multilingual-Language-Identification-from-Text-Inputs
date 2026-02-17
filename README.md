@@ -142,7 +142,7 @@
 
   1.  Clone the Repository
 
-     git clone https://github.com/ismail-omer/ismail-omer/Transformer-Based-Multilingual-Language-Identification-from-Text-Inputs.git
+     git clone https://github.com/ismail-omer/Transformer-Based-Multilingual-Language-Identification-from-Text-Inputs.git
 
      cd Transformer-Based-Multilingual-Language-Identification-from-Text-Inputs
 
